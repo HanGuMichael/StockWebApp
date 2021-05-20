@@ -1,0 +1,284 @@
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3e3e3e;
+  background: #eee;
+}
+.App-header {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+@media only screen and (min-width: 414px) and (max-width:414px){
+  .nav_brand{
+    margin-left: -10px;
+  }
+  .graphButton{
+    display: flex;
+    flex-direction: column;
+  }
+  #responsive-navbar-nav{
+    margin-left:105px;
+    margin-top: 0px;
+  }
+  .market-pairs2{
+    margin-top: 20px;
+  }
+  .addFormWrapper{
+    margin-top: -35px;
+    margin-left: 5px;
+  }
+  .deleteFormWrapper{
+    margin-top: 10px;
+    margin-left: 4px;
+  }
+}
+.my-auto{
+  margin-left: 30px;
+}
+.selectWrapper {
+  font-size: 20px;
+  margin-top: -18%;
+  position: relative;
+}
+
+form {
+  box-sizing: border-box;
+}
+form input {
+  display: block;
+  height: 28px;
+  margin: 0 0 15px;
+  outline: none;
+  border: 0;
+  width: 100%;
+  padding: 0 0 4px;
+  background: none;
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  overflow: visible;
+  transition: padding-left .2s, border-left .2s;
+  padding-left: 0;
+  border-left: 0px solid transparent;
+}
+form .highInput {
+  height: 43px;
+}
+form input:focus {
+  padding-left: 10px;
+  border-left: 5px solid #b1b1b1;
+}
+form input::placeholder {
+  color: #3e3e3e;
+  transition: color .2s;
+}
+form input:focus::placeholder {
+  color: #b1b1b1;
+}
+
+
+.alertWrapper p {
+  font-size: 12px;
+  color: red;
+  white-space: pre-line;
+}
+
+.justify-content-end{
+  margin-top: 55px;
+  margin-bottom: -10px;
+  margin-right: -10px;
+}
+
+.homepageWrapper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -10px;
+  margin-top: -140px;
+  overflow: 'auto'
+}
+
+.navbar{
+  background-color:#787878;
+}
+
+.nav_brand {
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  padding: 0;
+  margin-top: 60px;
+}
+
+.market-pairs2{
+  background-color: #FFFFFF;
+  border: 1px solid #e0e3eb;
+  padding-top: 14px;
+  border-radius: 2px;
+  
+}
+
+.graphButton{
+  margin-bottom: 70px;
+  margin-top: -10px;
+  margin-left: 20px;
+  size: relative;
+}
+
+.market-pairs {
+  background-color: #FFFFFF;
+  border: 1px solid #e0e3eb;
+  padding-top: 14px;
+  border-radius: 2px;
+  height: 100%
+}
+
+.market-pairs .header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.market-pairs span {
+  background: transparent;
+}
+
+.market-pairs input {
+  border-color: #e0e3eb;
+  border-left: 0;
+  font-weight: 300;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+tbody tr {
+  color: #4a4a4a;
+}
+
+tbody tr:hover {
+  background: #f6f8f9;
+}
+
+.table td,
+.table th {
+    border-top: 1px solid #f0f3fa;
+}
+
+.table td {
+  font-size: 13px;
+  padding: 10px 18px !important;
+}
+.market-pairs{
+  box-shadow: -12px 12px 0;
+}
+.market-pairs tbody tr td i {
+  color: #75869696;
+}
+
+.market-pairs thead tr th,
+.market-pairs tbody tr td {
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.market-pairs tbody {
+  overflow-y: auto;
+  display: block;
+}
+
+.market-pairs table,
+.market-pairs tr {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.market-pairs tr {
+    float: left;
+    clear: both;
+    overflow: hidden;
+}
+
+thead tr th {
+  padding: 8px 15px !important;
+}
+
+thead th {
+  color: #758696;
+  font-size: 13px;
+  font-weight: 600;
+  border: 0 !important;
+}
+
+.table tbody + tbody {
+  border: none;
+}
+
+.market-pairs thead th,
+.market-pairs tbody td {
+    width: 65%;
+}
+.addFormWrapper{
+  background: white;
+  display: flex;
+  align-items: center;
+  height: 70vh;
+  width: 400px;
+  position: absolute;
+  top: 20%;
+  left: calc(50% - 200px);
+  border: 1px solid #e0e3eb;
+  border-radius: 2px;
+  box-shadow: -12px 12px 0;
+  padding: 80px 0 10px 0;
+}
+
+.deleteFormWrapper {
+  background: white;
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  width: 450px;
+  position: absolute;
+  top: 20%;
+  left: calc(50% - 200px);
+  border: 1px solid #e0e3eb;
+  border-radius: 2px;
+  box-shadow: -12px 12px 0;
+  padding: 80px 0 10px 0;
+}
+
+.addFormBackground {
+  background-color: rgba(224, 227, 235, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.closeIcon {
+  cursor: pointer;
+  float: right;
+  font-size: 25px;
+}
+.selectWrapper2{
+  font-size: 21px;
+  margin-top: -90px;
+  margin-bottom: 70px;
+  position: relative;
+  margin-left: 20px;
+}
+.fields{
+  margin-bottom: 15px;
+  line-height: 1cm;
+}
+.closeIcon:hover {
+  color: black;
+}
